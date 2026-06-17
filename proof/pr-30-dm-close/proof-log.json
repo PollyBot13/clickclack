@@ -1,0 +1,153 @@
+{
+  "base": "http://127.0.0.1:18083",
+  "workspace_id": "wsp_01kvazkkrzn50axyxgn7kvgybx",
+  "workspace_route_id": "TV9KA5BZDP3DM6ZTE",
+  "other_user_id": "usr_01kvazkm0bqybjzvz1qam802fm",
+  "steps": [
+    {
+      "method": "POST",
+      "path": "/api/dms",
+      "status": 201,
+      "body": {
+        "conversation": {
+          "id": "dm_01kvazkm960f33k8z52b90m9rn",
+          "route_id": "DVCQXX6JHJJFBZ6X4",
+          "workspace_id": "wsp_01kvazkkrzn50axyxgn7kvgybx",
+          "created_at": "2026-06-17T14:26:19.558498Z",
+          "members": [
+            {
+              "id": "usr_01kvazkm0bqybjzvz1qam802fm",
+              "kind": "human",
+              "display_name": "Close Proof User",
+              "handle": "",
+              "avatar_url": "",
+              "created_at": "2026-06-17T14:26:19.275754Z"
+            },
+            {
+              "id": "usr_01kvazkkrzn50axyxgn3vw3qba",
+              "kind": "human",
+              "display_name": "Local Captain",
+              "handle": "",
+              "avatar_url": "",
+              "created_at": "2026-06-17T14:26:19.039615Z"
+            }
+          ],
+          "last_seq": 0,
+          "last_read_seq": 0,
+          "unread_count": 0
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/dms/dm_01kvazkm960f33k8z52b90m9rn",
+      "status": 200,
+      "body": {
+        "conversation": {
+          "id": "dm_01kvazkm960f33k8z52b90m9rn",
+          "route_id": "DVCQXX6JHJJFBZ6X4",
+          "workspace_id": "wsp_01kvazkkrzn50axyxgn7kvgybx",
+          "created_at": "2026-06-17T14:26:19.558498Z",
+          "members": [
+            {
+              "id": "usr_01kvazkm0bqybjzvz1qam802fm",
+              "kind": "human",
+              "display_name": "Close Proof User",
+              "handle": "",
+              "avatar_url": "",
+              "created_at": "2026-06-17T14:26:19.275754Z"
+            },
+            {
+              "id": "usr_01kvazkkrzn50axyxgn3vw3qba",
+              "kind": "human",
+              "display_name": "Local Captain",
+              "handle": "",
+              "avatar_url": "",
+              "created_at": "2026-06-17T14:26:19.039615Z"
+            }
+          ],
+          "last_seq": 0,
+          "last_read_seq": 0,
+          "unread_count": 0
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/dms",
+      "status": 201,
+      "body": {
+        "conversation": {
+          "id": "dm_01kvazkm960f33k8z52b90m9rn",
+          "route_id": "DVCQXX6JHJJFBZ6X4",
+          "workspace_id": "wsp_01kvazkkrzn50axyxgn7kvgybx",
+          "created_at": "2026-06-17T14:26:19.558498Z",
+          "members": [
+            {
+              "id": "usr_01kvazkm0bqybjzvz1qam802fm",
+              "kind": "human",
+              "display_name": "Close Proof User",
+              "handle": "",
+              "avatar_url": "",
+              "created_at": "2026-06-17T14:26:19.275754Z"
+            },
+            {
+              "id": "usr_01kvazkkrzn50axyxgn3vw3qba",
+              "kind": "human",
+              "display_name": "Local Captain",
+              "handle": "",
+              "avatar_url": "",
+              "created_at": "2026-06-17T14:26:19.039615Z"
+            }
+          ],
+          "last_seq": 0,
+          "last_read_seq": 0,
+          "unread_count": 0
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/dms/dm_01kvazkm960f33k8z52b90m9rn/messages",
+      "status": 201,
+      "body": {
+        "event": {
+          "id": "evt_01kvazkmmfb6vnnfw7nmktx6hk",
+          "cursor": "cur_01kvazkmmfb6vnnfw7nnk0jd73",
+          "type": "message.created",
+          "workspace_id": "wsp_01kvazkkrzn50axyxgn7kvgybx",
+          "seq": 1,
+          "created_at": "2026-06-17T14:26:19.919332Z",
+          "payload": {
+            "author_id": "usr_01kvazkm0bqybjzvz1qam802fm",
+            "direct_conversation_id": "dm_01kvazkm960f33k8z52b90m9rn",
+            "message_id": "msg_01kvazkmmfb6vnnfw7nj4yw741"
+          }
+        },
+        "message": {
+          "id": "msg_01kvazkmmfb6vnnfw7nj4yw741",
+          "workspace_id": "wsp_01kvazkkrzn50axyxgn7kvgybx",
+          "direct_conversation_id": "dm_01kvazkm960f33k8z52b90m9rn",
+          "author_id": "usr_01kvazkm0bqybjzvz1qam802fm",
+          "thread_root_id": "msg_01kvazkmmfb6vnnfw7nj4yw741",
+          "channel_seq": 1,
+          "body": "resurface this dm",
+          "body_format": "markdown",
+          "created_at": "2026-06-17T14:26:19.919058Z",
+          "author": {
+            "id": "usr_01kvazkm0bqybjzvz1qam802fm",
+            "kind": "human",
+            "display_name": "Close Proof User",
+            "handle": "",
+            "avatar_url": "",
+            "created_at": "2026-06-17T14:26:19.275754Z"
+          }
+        }
+      }
+    }
+  ],
+  "conversation_id": "dm_01kvazkm960f33k8z52b90m9rn",
+  "conversation_route_id": "DVCQXX6JHJJFBZ6X4",
+  "reopened_same_conversation": true,
+  "resurface_message_id": "msg_01kvazkmmfb6vnnfw7nj4yw741"
+}
