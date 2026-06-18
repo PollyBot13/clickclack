@@ -1,0 +1,29 @@
+{
+  "head": "406c37cdc7cc7729274077165ae6472d82683dde",
+  "actor_user_id": "usr_01kvdqdppkzwjtxpnrn4d8hn9m",
+  "other_user_id": "usr_01kvdqdq3smybjqc8x3feq51zh",
+  "workspace_id": "wsp_01kvdqdppkzwjtxpnrnagjmedj",
+  "workspace_route_id": "T8WHD6F0KNFRJFZNJ",
+  "conversation_id": "dm_01kvdqdq3wptn9j4c0vbkm5dqb",
+  "conversation_route_id": "DZYM1106MB26XCME9",
+  "hidden_get_status": 200,
+  "open_status": 200,
+  "open_restored_same_conversation": true,
+  "network": [
+    {
+      "method": "DELETE",
+      "url": "/api/dms/dm_01kvdqdq3wptn9j4c0vbkm5dqb",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "url": "/api/dms/dm_01kvdqdq3wptn9j4c0vbkm5dqb/open",
+      "status": 200
+    }
+  ],
+  "screenshots": [
+    "07-actions-menu-open.png",
+    "08-undo-visible-after-close.png",
+    "09-undo-restores-same-dm.png"
+  ]
+}

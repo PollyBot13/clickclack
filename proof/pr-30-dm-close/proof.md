@@ -11,6 +11,28 @@ This proof package shows the browser and API behavior for closing a direct messa
 - `05-new-message-resurfaces-dm.png` - a new root DM message from the other user resurfaces the hidden DM with one unread message.
 - `06-resurfaced-message-opened.png` - selecting the resurfaced DM opens the new message.
 
+## Current Head Menu + Undo Proof
+
+Additional proof was captured for PR head `406c37cdc7cc7729274077165ae6472d82683dde`, after the final actions-menu and Undo follow-up:
+
+- `07-actions-menu-open.png` - the direct-message row exposes the `...` actions menu and shows the `Close direct message` menu item.
+- `08-undo-visible-after-close.png` - closing the DM hides it from the direct-message list and shows the inline `Undo` affordance.
+- `09-undo-restores-same-dm.png` - pressing `Undo` restores the same DM to the direct-message list.
+
+Backing current-head proof is in `proof-current-head-menu-undo.json`:
+
+- Conversation: `dm_01kvdqdq3wptn9j4c0vbkm5dqb`
+- Route id: `DZYM1106MB26XCME9`
+- Hidden direct `GET /api/dms/{id}` status: `200`
+- Undo `POST /api/dms/{id}/open` status: `200`
+- Undo restored same conversation: `true`
+
+`server-current-head.log` includes the matching local proof request sequence:
+
+- `DELETE /api/dms/dm_01kvdqdq3wptn9j4c0vbkm5dqb -> 200`
+- `GET /api/dms/dm_01kvdqdq3wptn9j4c0vbkm5dqb -> 200`
+- `POST /api/dms/dm_01kvdqdq3wptn9j4c0vbkm5dqb/open -> 200`
+
 ## Backing Runtime Data
 
 - Workspace: `wsp_01kvazkkrzn50axyxgn7kvgybx`
